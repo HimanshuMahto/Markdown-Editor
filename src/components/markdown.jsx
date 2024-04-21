@@ -34,7 +34,9 @@ export const MarkDown = () => {
         <div className="preview_title">
           <div className="preview">Preview</div>
           <div className="markArea">
-            <ReactMarkdown>{markdown}</ReactMarkdown>
+            <ReactMarkdown>
+              {markdown}
+            </ReactMarkdown>
           </div>
         </div>
       </div>
