@@ -1,0 +1,112 @@
+
+.container{
+    margin-top: 3vh;
+    margin-left: 5vw;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+}
+
+.pageTitle{
+    background: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+    margin: -8px;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.title{
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+
+.markdown{
+    width: min-content;
+    border: 5px solid black;
+    border-radius: 10px 10px 0 0;
+    height: 3vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: -5px;
+    margin-left: 1.3vw;
+    background: rgb(24, 24, 27);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: 700;
+}
+
+
+.noteArea{
+    width: 80%;
+    height: 100%;
+    background: rgb(24, 24, 27);
+    color: white;
+    border: 1px solid rgb(24, 24, 27);
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 1rem;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.preview_title{
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.preview{
+    width: min-content;
+    height: 3vh;
+    border: 5px solid rgb(192, 174, 125);
+    border-radius: 10px 10px 0 0;
+    background: rgb(192, 174, 125);
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -5px;
+    margin-left: 2.3vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.markArea{
+    width: 96%;
+    height: 100%;
+    background: rgb(192, 174, 125);
+    margin-left: 1vw;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .title, .markdown, .preview, .noteArea, .markArea {
+        width: 100%;
+        height: wrap;
+        margin-left: 0;
+    }
+}
